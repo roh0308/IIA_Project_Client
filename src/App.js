@@ -3,6 +3,7 @@ import Laptops from "./pages/Laptops";
 import Add from "./pages/Add";
 import Delete from "./pages/Delete";
 import "./style.css"
+import Template from "./pages/template/Template";
 <Route path="/delete" element={<Delete />} />
 
 
@@ -12,7 +13,8 @@ function App() {
     <div className="App">
       <BrowserRouter>
         <Routes>
-          <Route path="/" element={<Laptops />} />
+        <Route path="/" element={<Template />} />
+          <Route path="/laptop" element={<Laptops />} />
           <Route path="/add" element={<Add />} />
           <Route path="/delete" element={<Delete />} />
         </Routes>
